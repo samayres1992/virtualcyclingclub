@@ -5885,51 +5885,96 @@ object {
 .gallery-caption {
   display: block;
 }
+a {
+  color: #fff;
+}
+a:hover,
+a:focus,
+a:visited {
+  color: #fff;
+}
+.btn {
+  background-color: #039be5 !important;
+}
+.btn a {
+  color: #fff !important;
+}
 nav {
   position: fixed;
   z-index: 999;
+  background-color: rgba(3,155,229,0.8) !important;
 }
 nav,
 footer {
   background-color: rgba(3,155,229,0.8) !important;
 }
-#content {
+section.content {
   padding-top: 64px;
 }
-section.hero {
+section.content section.hero {
   background-image: url("/wp-content/themes/virtual-cycling-club/images/hero.jpg");
   background-size: cover;
   height: 600px;
   height: 60vh;
   padding-top: 50px;
 }
-section.hero .focus {
+section.content section.hero .container {
+  position: relative;
+  top: 20%;
+  top: calc(50% - 220px);
+}
+section.content section.hero .container .focus {
   background: #f96; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(255,94,98,0.75), rgba(255,153,102,0.75)); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, rgba(255,94,98,0.75), rgba(255,153,102,0.75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: rgba(0,0,0,0.75);
   border-radius: 5px;
   color: #fff;
-  height: 300px;
-  width: 80%;
   margin: 0 auto;
-  position: relative;
-  top: 20%;
-  top: calc(50% - 150px);
   padding: 2.5%;
 }
-.welcome {
+section.content section.hero .container .focus .welcome {
   border-right: 1px solid #fff;
   height: 100%;
 }
-.process {
+section.content section.hero .container .focus .process {
   padding: 50px 0;
   text-align: center;
 }
-.process .material-icons {
+section.content section.hero .container .focus .process .material-icons {
   padding: 15px;
   border: 1px solid #444;
   border-radius: 5em;
   font-size: 5em;
   margin: 0 0.5em;
+}
+section.content section.hero .container .focus .encourage a {
+  font-size: 26px;
+  padding: 12px 30px 45px 25px;
+  margin-top: 5px;
+}
+section.content section.additional-info {
+  padding-top: 64px;
+}
+section.content section.additional-info .icon {
+  text-align: center;
+}
+section.content section.additional-info .icon i {
+  font-size: 5em;
+  color: #039be5;
+  border: 5px solid #039be5;
+  border-radius: 1em;
+  width: 1.8em;
+  height: 1.8em;
+  padding-top: 0.32em;
+}
+footer i {
+  font-size: 36px;
+  color: #fff;
+}
+footer ul {
+  margin-left: 0;
+}
+footer .plug i {
+  font-size: 18px;
 }

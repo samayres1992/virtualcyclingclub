@@ -10,5 +10,9 @@
   },
   "scripts": {
     "gulp": "gulp"
+  },
+  "dependencies": {
+    "gulp-copy": "^1.1.0",
+    "jquery": "^3.3.1"
   }
 }
